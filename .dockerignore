@@ -1,0 +1,6 @@
+.git
+.gitignore
+.cursor
+desktop.ini
+**/*.bak
+fly/db/.fly

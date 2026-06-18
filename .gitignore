@@ -1,0 +1,21 @@
+# Entorno local
+.env
+.env.*
+!.env.example
+
+# IDE / sistema
+.cursor/
+.vscode/
+desktop.ini
+Thumbs.db
+*.bak
+
+# Dependencias (vendor incluido para despliegue directo en Fly)
+# Ejecutar `composer install` solo si eliminas vendor del repo.
+
+# Fly.io local
+.fly/
+.fly-db-password
+
+# Logs temporales
+*.log

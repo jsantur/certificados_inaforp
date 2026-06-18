@@ -1,0 +1,29 @@
+app = 'certificados-inaforp'
+primary_region = 'gru'
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[env]
+  DB_DATABASE = 'certificados_db'
+  DB_USERNAME = 'root'
+  APP_PUBLIC_URL = 'https://certificados-inaforp.fly.dev/certificados_inaforp'
+
+[http_service]
+  internal_port = 80
+  force_https = true
+  auto_stop_machines = 'off'
+  auto_start_machines = true
+  min_machines_running = 1
+
+  [[http_service.checks]]
+    grace_period = '20s'
+    interval = '30s'
+    method = 'GET'
+    path = '/admin-verificador/'
+    timeout = '5s'
+
+[[vm]]
+  memory = '512mb'
+  cpu_kind = 'shared'
+  cpus = 1
