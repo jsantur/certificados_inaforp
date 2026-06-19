@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://certificados-inaforp.fly.dev/">
-    <img src="./assets/img/inaforp-esin.webp" alt="INAFORP - ESIN" width="80%">
+    <img src="./images/jsantur-inaforp.png" alt="INAFORP - ESIN" width="80%">
   </a>
 </p>
 
